@@ -1,100 +1,567 @@
-2017-05-20 18:25:52,829 SENT to 179.124.44.234/5060 [Thread-1]
+2017-05-24 18:30:51,711 SENT to 179.124.44.234/5060 [Thread-1]
 
 REGISTER sip:179.124.44.234 SIP/2.0
-Via: SIP/2.0/UDP 192.168.1.8:6060;rport;branch=z9hG4bKF48nzWxhb
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKx6YBpV13f
 Max-Forwards: 70
 To: <sip:6313229@179.124.44.234>
-From: <sip:6313229@179.124.44.234>;tag=H5hBYB5r
-Call-ID: 6W7qZVMB-1495315552798@DESKTOP-08FQ5ND
+From: <sip:6313229@179.124.44.234>;tag=U26sk05C
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
 CSeq: 1 REGISTER
-Contact: <sip:6313229@192.168.1.8:6060;transport=UDP>
+Contact: <sip:6313229@10.0.0.16:6060;transport=UDP>
 
 
-2017-05-20 18:25:52,855 RECEIVED from 179.124.44.234/5060 [Thread-6]
+2017-05-24 18:30:51,739 RECEIVED from 179.124.44.234/5060 [Thread-6]
 
 SIP/2.0 401 Unauthorized
-Via: SIP/2.0/UDP 192.168.1.8:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKF48nzWxhb
-To: <sip:6313229@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.aabd
-From: <sip:6313229@179.124.44.234:5060>;tag=H5hBYB5r
-Call-ID: 6W7qZVMB-1495315552798@DESKTOP-08FQ5ND
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKx6YBpV13f
+To: <sip:6313229@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.9773
+From: <sip:6313229@179.124.44.234:5060>;tag=U26sk05C
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
 CSeq: 1 REGISTER
-WWW-Authenticate: Digest realm="179.124.44.234", nonce="5920b47f0001154c3dbbcbd738ed62ada1860aebf78cb0e9"
+WWW-Authenticate: Digest realm="179.124.44.234", nonce="5925fba700001ae7bed283b7e6b98f3393160354a3183117"
 Server: SIPTEK Softswitch
 Content-Length: 0
 
 
-2017-05-20 18:25:52,877 SENT to 179.124.44.234/5060 [Thread-6]
+2017-05-24 18:30:51,764 SENT to 179.124.44.234/5060 [Thread-6]
 
 REGISTER sip:179.124.44.234 SIP/2.0
-Via: SIP/2.0/UDP 192.168.1.8:6060;rport;branch=z9hG4bKPMWbSuShk
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKDzPkud42R
 Max-Forwards: 70
 To: <sip:6313229@179.124.44.234>
-From: <sip:6313229@179.124.44.234>;tag=H5hBYB5r
-Call-ID: 6W7qZVMB-1495315552798@DESKTOP-08FQ5ND
+From: <sip:6313229@179.124.44.234>;tag=U26sk05C
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
 CSeq: 2 REGISTER
-Contact: <sip:6313229@192.168.1.8:6060;transport=UDP>
-Authorization: Digest username="6313229", realm="179.124.44.234", nonce="5920b47f0001154c3dbbcbd738ed62ada1860aebf78cb0e9", uri="sip:179.124.44.234", response="e984c3cda1a463b0093cf05e07d62ae3"
+Contact: <sip:6313229@10.0.0.16:6060;transport=UDP>
+Authorization: Digest username="6313229", realm="179.124.44.234", nonce="5925fba700001ae7bed283b7e6b98f3393160354a3183117", uri="sip:179.124.44.234", response="c1ded56e97ffe1afca768688abc952f2"
 
 
-2017-05-20 18:25:52,907 RECEIVED from 179.124.44.234/5060 [Thread-6]
+2017-05-24 18:30:51,795 RECEIVED from 179.124.44.234/5060 [Thread-6]
 
 SIP/2.0 200 OK
-Via: SIP/2.0/UDP 192.168.1.8:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKPMWbSuShk
-To: <sip:6313229@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.2581
-From: <sip:6313229@179.124.44.234:5060>;tag=H5hBYB5r
-Call-ID: 6W7qZVMB-1495315552798@DESKTOP-08FQ5ND
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKDzPkud42R
+To: <sip:6313229@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.054c
+From: <sip:6313229@179.124.44.234:5060>;tag=U26sk05C
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
 CSeq: 2 REGISTER
-Contact: <sip:6313229@192.168.1.8:6060;transport=UDP>;expires=3600
+Contact: <sip:6313229@10.0.0.16:6060;transport=UDP>;expires=3600
 Server: SIPTEK Softswitch
 Content-Length: 0
 
 
-2017-05-20 19:24:29,521 SENT to 179.124.44.234/5060 [AWT-EventQueue-0]
+2017-05-24 18:31:04,194 SENT to 179.124.44.234/5060 [AWT-EventQueue-0]
+
+INVITE sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKuPLFxVUHv
+Max-Forwards: 70
+To: <sip:+5521968854718@179.124.44.234>
+From: <sip:6313229@179.124.44.234>;tag=ClTUrWP5
+Call-ID: 5EsvCAeX-1495661464182@DESKTOP-08FQ5ND
+CSeq: 3 INVITE
+Content-Length: 205
+Content-Type: application/sdp
+Contact: <sip:6313229@10.0.0.16:6060;transport=UDP>
+
+v=0
+o=user1 555785730 1098550882 IN IP4 10.0.0.16
+s=-
+c=IN IP4 10.0.0.16
+t=0 0
+m=audio 8000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+
+2017-05-24 18:31:04,319 RECEIVED from 179.124.44.234/5060 [Thread-6]
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKuPLFxVUHv
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.c399
+From: <sip:6313229@179.124.44.234:5060>;tag=ClTUrWP5
+Call-ID: 5EsvCAeX-1495661464182@DESKTOP-08FQ5ND
+CSeq: 3 INVITE
+Proxy-Authenticate: Digest realm="179.124.44.234", nonce="5925fbb400001f45c5394a813e379bed4b600ac9b8bf12c9"
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:31:04,322 SENT to 179.124.44.234/5060 [Thread-6]
+
+ACK sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKuPLFxVUHv
+Call-ID: 5EsvCAeX-1495661464182@DESKTOP-08FQ5ND
+From: <sip:6313229@179.124.44.234>;tag=ClTUrWP5
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.c399
+CSeq: 3 ACK
+
+
+2017-05-24 18:31:04,343 SENT to 179.124.44.234/5060 [Thread-6]
+
+INVITE sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKxcifhvDUt
+Max-Forwards: 70
+To: <sip:+5521968854718@179.124.44.234>
+From: <sip:6313229@179.124.44.234>;tag=ClTUrWP5
+Call-ID: 5EsvCAeX-1495661464182@DESKTOP-08FQ5ND
+CSeq: 4 INVITE
+Content-Length: 204
+Content-Type: application/sdp
+Contact: <sip:6313229@10.0.0.16:6060;transport=UDP>
+Proxy-Authorization: Digest username="6313229", realm="179.124.44.234", nonce="5925fbb400001f45c5394a813e379bed4b600ac9b8bf12c9", uri="sip:+5521968854718@179.124.44.234", response="bb05a5d993e9615decad5e55f0071cba"
+
+v=0
+o=user1 675066985 968172436 IN IP4 10.0.0.16
+s=-
+c=IN IP4 10.0.0.16
+t=0 0
+m=audio 8000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+
+2017-05-24 18:31:04,371 RECEIVED from 179.124.44.234/5060 [Thread-6]
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKxcifhvDUt
+To: <sip:+5521968854718@179.124.44.234:5060>
+From: <sip:6313229@179.124.44.234:5060>;tag=ClTUrWP5
+Call-ID: 5EsvCAeX-1495661464182@DESKTOP-08FQ5ND
+CSeq: 4 INVITE
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:31:04,376 RECEIVED from 179.124.44.234/5060 [Thread-6]
+
+SIP/2.0 503 Not enough credit
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKxcifhvDUt
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=6ff02361a06a00089d667912d27ab82a-7570
+From: <sip:6313229@179.124.44.234:5060>;tag=ClTUrWP5
+Call-ID: 5EsvCAeX-1495661464182@DESKTOP-08FQ5ND
+CSeq: 4 INVITE
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:31:04,377 SENT to 179.124.44.234/5060 [Thread-6]
+
+ACK sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKxcifhvDUt
+Call-ID: 5EsvCAeX-1495661464182@DESKTOP-08FQ5ND
+From: <sip:6313229@179.124.44.234>;tag=ClTUrWP5
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=6ff02361a06a00089d667912d27ab82a-7570
+CSeq: 4 ACK
+
+
+2017-05-24 18:37:12,105 SENT to 179.124.44.234/5060 [AWT-EventQueue-0]
 
 REGISTER sip:179.124.44.234 SIP/2.0
-Via: SIP/2.0/UDP 192.168.1.8:6060;rport;branch=z9hG4bKGjmmh4Dl3
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKHbsx3PN54
 Max-Forwards: 70
 To: <sip:6313229@179.124.44.234>
-From: <sip:6313229@179.124.44.234>;tag=OorNdqFi
-Call-ID: 6W7qZVMB-1495315552798@DESKTOP-08FQ5ND
-CSeq: 3 REGISTER
-Contact: <sip:6313229@192.168.1.8:6060;transport=UDP>;expires=0
+From: <sip:6313229@179.124.44.234>;tag=3LWqftKR
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 5 REGISTER
+Contact: <sip:6313229@10.0.0.16:6060;transport=UDP>;expires=0
 
 
-2017-05-20 19:24:29,552 RECEIVED from 179.124.44.234/5060 [Thread-6]
+2017-05-24 18:37:12,129 RECEIVED from 179.124.44.234/5060 [Thread-6]
 
 SIP/2.0 401 Unauthorized
-Via: SIP/2.0/UDP 192.168.1.8:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKGjmmh4Dl3
-To: <sip:6313229@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.24f0
-From: <sip:6313229@179.124.44.234:5060>;tag=OorNdqFi
-Call-ID: 6W7qZVMB-1495315552798@DESKTOP-08FQ5ND
-CSeq: 3 REGISTER
-WWW-Authenticate: Digest realm="179.124.44.234", nonce="5920c23b0001456566bf3c39c8a52750da4f258fbe4e6daf"
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKHbsx3PN54
+To: <sip:6313229@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.5ab0
+From: <sip:6313229@179.124.44.234:5060>;tag=3LWqftKR
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 5 REGISTER
+WWW-Authenticate: Digest realm="179.124.44.234", nonce="5925fd2400008d5bd3442a4b66c5c7ff20048a83deabab7e"
 Server: SIPTEK Softswitch
 Content-Length: 0
 
 
-2017-05-20 19:24:29,558 SENT to 179.124.44.234/5060 [Thread-6]
+2017-05-24 18:37:12,145 SENT to 179.124.44.234/5060 [Thread-6]
 
 REGISTER sip:179.124.44.234 SIP/2.0
-Via: SIP/2.0/UDP 192.168.1.8:6060;rport;branch=z9hG4bKh5eNceDjB
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKtzTcVivsR
 Max-Forwards: 70
 To: <sip:6313229@179.124.44.234>
-From: <sip:6313229@179.124.44.234>;tag=OorNdqFi
-Call-ID: 6W7qZVMB-1495315552798@DESKTOP-08FQ5ND
-CSeq: 4 REGISTER
-Contact: <sip:6313229@192.168.1.8:6060;transport=UDP>;expires=0
-Authorization: Digest username="6313229", realm="179.124.44.234", nonce="5920c23b0001456566bf3c39c8a52750da4f258fbe4e6daf", uri="sip:179.124.44.234", response="86b6dd4a8267d2be35f0701a86e79edc"
+From: <sip:6313229@179.124.44.234>;tag=3LWqftKR
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 6 REGISTER
+Contact: <sip:6313229@10.0.0.16:6060;transport=UDP>;expires=0
+Authorization: Digest username="6313229", realm="179.124.44.234", nonce="5925fd2400008d5bd3442a4b66c5c7ff20048a83deabab7e", uri="sip:179.124.44.234", response="23397e98e238dcefd1d980c42cb1e09d"
 
 
-2017-05-20 19:24:29,588 RECEIVED from 179.124.44.234/5060 [Thread-6]
+2017-05-24 18:37:12,181 RECEIVED from 179.124.44.234/5060 [Thread-6]
 
 SIP/2.0 200 OK
-Via: SIP/2.0/UDP 192.168.1.8:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKh5eNceDjB
-To: <sip:6313229@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.60e0
-From: <sip:6313229@179.124.44.234:5060>;tag=OorNdqFi
-Call-ID: 6W7qZVMB-1495315552798@DESKTOP-08FQ5ND
-CSeq: 4 REGISTER
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKtzTcVivsR
+To: <sip:6313229@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.1789
+From: <sip:6313229@179.124.44.234:5060>;tag=3LWqftKR
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 6 REGISTER
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:37:13,061 SENT to 179.124.44.234/5060 [Thread-10]
+
+REGISTER sip:179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKchdMiA23t
+Max-Forwards: 70
+To: <sip:2326535@179.124.44.234>
+From: <sip:2326535@179.124.44.234>;tag=Ujxj5Cy6
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 7 REGISTER
+Contact: <sip:2326535@10.0.0.16:6060;transport=UDP>
+
+
+2017-05-24 18:37:13,191 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKchdMiA23t
+To: <sip:2326535@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.b770
+From: <sip:2326535@179.124.44.234:5060>;tag=Ujxj5Cy6
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 7 REGISTER
+WWW-Authenticate: Digest realm="179.124.44.234", nonce="5925fd2500008dc4a0d9274faa380b0d1b8f22c5a4fc2c7e"
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:37:13,207 SENT to 179.124.44.234/5060 [Thread-12]
+
+REGISTER sip:179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKFFRW6ZKVw
+Max-Forwards: 70
+To: <sip:2326535@179.124.44.234>
+From: <sip:2326535@179.124.44.234>;tag=Ujxj5Cy6
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 8 REGISTER
+Contact: <sip:2326535@10.0.0.16:6060;transport=UDP>
+Authorization: Digest username="2326535", realm="179.124.44.234", nonce="5925fd2500008dc4a0d9274faa380b0d1b8f22c5a4fc2c7e", uri="sip:179.124.44.234", response="b2fb9e6b1537f4c5bd3df0fcf1ef6826"
+
+
+2017-05-24 18:37:13,230 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKFFRW6ZKVw
+To: <sip:2326535@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.408c
+From: <sip:2326535@179.124.44.234:5060>;tag=Ujxj5Cy6
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 8 REGISTER
+Contact: <sip:2326535@10.0.0.16:6060;transport=UDP>;expires=3600
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:37:21,866 SENT to 179.124.44.234/5060 [AWT-EventQueue-0]
+
+INVITE sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKc4oqiFcF6
+Max-Forwards: 70
+To: <sip:+5521968854718@179.124.44.234>
+From: <sip:2326535@179.124.44.234>;tag=XZpiZ5OV
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 9 INVITE
+Content-Length: 206
+Content-Type: application/sdp
+Contact: <sip:2326535@10.0.0.16:6060;transport=UDP>
+
+v=0
+o=user1 1867235716 1141356518 IN IP4 10.0.0.16
+s=-
+c=IN IP4 10.0.0.16
+t=0 0
+m=audio 8000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+
+2017-05-24 18:37:21,894 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKc4oqiFcF6
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.243e
+From: <sip:2326535@179.124.44.234:5060>;tag=XZpiZ5OV
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 9 INVITE
+Proxy-Authenticate: Digest realm="179.124.44.234", nonce="5925fd2e000091a8515baadd7569dffd4e229535bc0c3171"
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:37:21,895 SENT to 179.124.44.234/5060 [Thread-12]
+
+ACK sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKc4oqiFcF6
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+From: <sip:2326535@179.124.44.234>;tag=XZpiZ5OV
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.243e
+CSeq: 9 ACK
+
+
+2017-05-24 18:37:21,902 SENT to 179.124.44.234/5060 [Thread-12]
+
+INVITE sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKy8NtKkCSK
+Max-Forwards: 70
+To: <sip:+5521968854718@179.124.44.234>
+From: <sip:2326535@179.124.44.234>;tag=XZpiZ5OV
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 10 INVITE
+Content-Length: 204
+Content-Type: application/sdp
+Contact: <sip:2326535@10.0.0.16:6060;transport=UDP>
+Proxy-Authorization: Digest username="2326535", realm="179.124.44.234", nonce="5925fd2e000091a8515baadd7569dffd4e229535bc0c3171", uri="sip:+5521968854718@179.124.44.234", response="a47615da4a7b6cad8dc1356cb0c428a0"
+
+v=0
+o=user1 573748266 152895644 IN IP4 10.0.0.16
+s=-
+c=IN IP4 10.0.0.16
+t=0 0
+m=audio 8000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+
+2017-05-24 18:37:21,938 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 100 Trying
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKy8NtKkCSK
+To: <sip:+5521968854718@179.124.44.234:5060>
+From: <sip:2326535@179.124.44.234:5060>;tag=XZpiZ5OV
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 10 INVITE
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:37:24,762 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 183 Session Progress
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKy8NtKkCSK
+Record-Route: <sip:179.124.44.234;lr;ftag=XZpiZ5OV;did=ed3.427a37c>
+From: <sip:2326535@179.124.44.234:5060>;tag=XZpiZ5OV
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=as5f0baf8c
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 10 INVITE
+Server: Asterisk PBX 1.8.31.0
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH, MESSAGE
+Supported: replaces, timer
+Contact: <sip:425073996@179.124.44.235:5060>
+Content-Type: application/sdp
+Content-Length: 263
+
+v=0
+o=root 587151209 587151209 IN IP4 179.124.44.235
+s=Asterisk PBX 1.8.31.0
+c=IN IP4 179.124.44.233
+t=0 0
+m=audio 41706 RTP/AVP 8 0 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ptime:20
+a=sendrecv
+
+2017-05-24 18:37:28,884 SENT to 179.124.44.234/5060 [AWT-EventQueue-0]
+
+INVITE sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKjYUO7HxCp
+Max-Forwards: 70
+To: <sip:+5521968854718@179.124.44.234>
+From: <sip:2326535@179.124.44.234>;tag=F5AdVExB
+Call-ID: c8vZXZzb-1495661848881@DESKTOP-08FQ5ND
+CSeq: 11 INVITE
+Content-Length: 205
+Content-Type: application/sdp
+Contact: <sip:2326535@10.0.0.16:6060;transport=UDP>
+
+v=0
+o=user1 1298620400 456136932 IN IP4 10.0.0.16
+s=-
+c=IN IP4 10.0.0.16
+t=0 0
+m=audio 8000 RTP/AVP 0 8 101
+a=rtpmap:0 PCMU/8000
+a=rtpmap:8 PCMA/8000
+a=rtpmap:101 telephone-event/8000
+a=sendrecv
+
+2017-05-24 18:37:28,915 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 407 Proxy Authentication Required
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKjYUO7HxCp
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.7e63
+From: <sip:2326535@179.124.44.234:5060>;tag=F5AdVExB
+Call-ID: c8vZXZzb-1495661848881@DESKTOP-08FQ5ND
+CSeq: 11 INVITE
+Proxy-Authenticate: Digest realm="179.124.44.234", nonce="5925fd35000093946a8521b89edd348d0ac3468bfb214217"
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:37:28,916 SENT to 179.124.44.234/5060 [Thread-12]
+
+ACK sip:+5521968854718@179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bKjYUO7HxCp
+Call-ID: c8vZXZzb-1495661848881@DESKTOP-08FQ5ND
+From: <sip:2326535@179.124.44.234>;tag=F5AdVExB
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.7e63
+CSeq: 11 ACK
+
+
+2017-05-24 18:37:38,224 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKy8NtKkCSK
+Record-Route: <sip:179.124.44.234;lr;ftag=XZpiZ5OV;did=ed3.427a37c>
+From: <sip:2326535@179.124.44.234:5060>;tag=XZpiZ5OV
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=as5f0baf8c
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 10 INVITE
+Server: Asterisk PBX 1.8.31.0
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH, MESSAGE
+Supported: replaces, timer
+Contact: <sip:425073996@179.124.44.235:5060>
+Content-Type: application/sdp
+Content-Length: 263
+
+v=0
+o=root 587151209 587151209 IN IP4 179.124.44.235
+s=Asterisk PBX 1.8.31.0
+c=IN IP4 179.124.44.233
+t=0 0
+m=audio 41706 RTP/AVP 8 0 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ptime:20
+a=sendrecv
+
+2017-05-24 18:37:39,746 SENT to 179.124.44.234/5060 [Thread-12]
+
+ACK sip:425073996@179.124.44.235:5060 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bK0ncI4WZwW
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=as5f0baf8c
+From: <sip:2326535@179.124.44.234>;tag=XZpiZ5OV
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 10 ACK
+Route: <sip:179.124.44.234;lr;ftag=XZpiZ5OV;did=ed3.427a37c>
+Max-Forwards: 70
+Proxy-Authorization: Digest username="2326535", realm="179.124.44.234", nonce="5925fd2e000091a8515baadd7569dffd4e229535bc0c3171", uri="sip:+5521968854718@179.124.44.234", response="ab4a4d23682c05e383bbf0a7c5d68a38"
+
+
+2017-05-24 18:37:39,746 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKy8NtKkCSK
+Record-Route: <sip:179.124.44.234;lr;ftag=XZpiZ5OV;did=ed3.427a37c>
+From: <sip:2326535@179.124.44.234:5060>;tag=XZpiZ5OV
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=as5f0baf8c
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 10 INVITE
+Server: Asterisk PBX 1.8.31.0
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH, MESSAGE
+Supported: replaces, timer
+Contact: <sip:425073996@179.124.44.235:5060>
+Content-Type: application/sdp
+Content-Length: 263
+
+v=0
+o=root 587151209 587151209 IN IP4 179.124.44.235
+s=Asterisk PBX 1.8.31.0
+c=IN IP4 179.124.44.233
+t=0 0
+m=audio 41706 RTP/AVP 8 0 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ptime:20
+a=sendrecv
+
+2017-05-24 18:37:39,747 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bKy8NtKkCSK
+Record-Route: <sip:179.124.44.234;lr;ftag=XZpiZ5OV;did=ed3.427a37c>
+From: <sip:2326535@179.124.44.234:5060>;tag=XZpiZ5OV
+To: <sip:+5521968854718@179.124.44.234:5060>;tag=as5f0baf8c
+Call-ID: 7cEZTOf2-1495661841865@DESKTOP-08FQ5ND
+CSeq: 10 INVITE
+Server: Asterisk PBX 1.8.31.0
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH, MESSAGE
+Supported: replaces, timer
+Contact: <sip:425073996@179.124.44.235:5060>
+Content-Type: application/sdp
+Content-Length: 263
+
+v=0
+o=root 587151209 587151209 IN IP4 179.124.44.235
+s=Asterisk PBX 1.8.31.0
+c=IN IP4 179.124.44.233
+t=0 0
+m=audio 41706 RTP/AVP 8 0 101
+a=rtpmap:8 PCMA/8000
+a=rtpmap:0 PCMU/8000
+a=rtpmap:101 telephone-event/8000
+a=fmtp:101 0-16
+a=ptime:20
+a=sendrecv
+
+2017-05-24 18:37:59,305 SENT to 179.124.44.234/5060 [AWT-EventQueue-0]
+
+REGISTER sip:179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bK5wdHH8dbC
+Max-Forwards: 70
+To: <sip:2326535@179.124.44.234>
+From: <sip:2326535@179.124.44.234>;tag=1HAy8W6f
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 12 REGISTER
+Contact: <sip:2326535@10.0.0.16:6060;transport=UDP>;expires=0
+
+
+2017-05-24 18:37:59,344 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 401 Unauthorized
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bK5wdHH8dbC
+To: <sip:2326535@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.4065
+From: <sip:2326535@179.124.44.234:5060>;tag=1HAy8W6f
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 12 REGISTER
+WWW-Authenticate: Digest realm="179.124.44.234", nonce="5925fd5300009c69ef6e070f60509de89f156419824597f7"
+Server: SIPTEK Softswitch
+Content-Length: 0
+
+
+2017-05-24 18:37:59,352 SENT to 179.124.44.234/5060 [Thread-12]
+
+REGISTER sip:179.124.44.234 SIP/2.0
+Via: SIP/2.0/UDP 10.0.0.16:6060;rport;branch=z9hG4bK4rX0M4isI
+Max-Forwards: 70
+To: <sip:2326535@179.124.44.234>
+From: <sip:2326535@179.124.44.234>;tag=1HAy8W6f
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 13 REGISTER
+Contact: <sip:2326535@10.0.0.16:6060;transport=UDP>;expires=0
+Authorization: Digest username="2326535", realm="179.124.44.234", nonce="5925fd5300009c69ef6e070f60509de89f156419824597f7", uri="sip:179.124.44.234", response="5ae7fcfd871a518ff737ba7f965365a7"
+
+
+2017-05-24 18:37:59,384 RECEIVED from 179.124.44.234/5060 [Thread-12]
+
+SIP/2.0 200 OK
+Via: SIP/2.0/UDP 10.0.0.16:6060;received=186.205.227.231;rport=6060;branch=z9hG4bK4rX0M4isI
+To: <sip:2326535@179.124.44.234:5060>;tag=0eed131814d2d199891fd2a7a02f9106.d126
+From: <sip:2326535@179.124.44.234:5060>;tag=1HAy8W6f
+Call-ID: Ds8iF7Oh-1495661451679@DESKTOP-08FQ5ND
+CSeq: 13 REGISTER
 Server: SIPTEK Softswitch
 Content-Length: 0
 

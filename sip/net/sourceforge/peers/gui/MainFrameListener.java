@@ -24,6 +24,7 @@ import net.sourceforge.peers.sip.syntaxencoding.SipUriSyntaxException;
 public interface MainFrameListener {
 
     public void callClicked(String callee);
+    public void terminateButton(String terminate);
     public void windowClosed();
     public void register() throws SipUriSyntaxException;
 

@@ -89,7 +89,7 @@ public class CallFrame implements ActionListener, WindowListener {
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         frame.addWindowListener(this);
     }
-
+    
     public void callClicked() {
         state.callClicked();
     }

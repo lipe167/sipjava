@@ -19,9 +19,12 @@
 
 package net.sourceforge.peers.gui;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.event.ActionEvent;
@@ -76,6 +79,21 @@ public class MainFrame implements WindowListener, ActionListener {
     private Registration registration;
     private Logger logger;
     
+    private JLabel lbNumber;
+    
+    private JButton terminateButton;
+    private JButton btnNum1;
+    private JButton btnNum2;
+    private JButton btnNum3;
+    private JButton btnNum4;
+    private JButton btnNum5;
+    private JButton btnNum6;
+    private JButton btnNum7;
+    private JButton btnNum8;
+    private JButton btnNum9;
+    private JButton btnNum0;
+    private JButton btnNumE;
+    private JButton btnNumT;
     
     private JButton[] numberButtons;
     private String[] buttonString = { "1", "2", "3",
@@ -107,30 +125,216 @@ public class MainFrame implements WindowListener, ActionListener {
 
         mainPanel = new JPanel();
         mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
+        //mainPanel.setBackground(Color.GREEN);
+        //mainPanel.setLayout(new GridLayout(3,1));
         
         dialerPanel = new JPanel();
+        
+        //dialerPanel.setLayout(new GridLayout(1, 3));
+        //dialerPanel.setBackground(Color.PINK);
+        dialerPanel.setBorder(BorderFactory.createEmptyBorder(0, 10, 0, 10));
+        Dimension dimension2 = new Dimension(280, 30);
+        dialerPanel.setMinimumSize(dimension2);
+        dialerPanel.setMaximumSize(dimension2);
 
-        uri = new JTextField("sip:", 15);
+        
+        lbNumber = new JLabel("Number:");
+        //uri = new JTextField("sip:", 15);
+        uri = new JTextField(15);
         uri.addActionListener(this);
 
         actionButton = new JButton("Call");
         actionButton.addActionListener(this);
-
+        
+        terminateButton = new JButton("Terminate");
+        terminateButton.addActionListener(this);
+        
+        dialerPanel.add(lbNumber);
+        //dialerPanel.add(terminateButton);
         dialerPanel.add(uri);
         dialerPanel.add(actionButton);
-        dialerPanel.setAlignmentX(Component.LEFT_ALIGNMENT);        
         
+        dialerPanel.setAlignmentX(Component.RIGHT_ALIGNMENT);        
+                
         JPanel teclasPanel = new JPanel();
+        //teclasPanel.setBackground(Color.black);
         teclasPanel.setLayout(new GridLayout(5, 3, 5, 5));
         
-        numberButtons = new JButton[buttonString.length];
+        teclasPanel.setBorder(BorderFactory.createEmptyBorder(15, 50, 0, 50));
+        Dimension dimension = new Dimension(280, 115);
+        teclasPanel.setMinimumSize(dimension);
+        teclasPanel.setMaximumSize(dimension);
+        teclasPanel.setAlignmentX(Component.RIGHT_ALIGNMENT);
+        
+        /*numberButtons = new JButton[buttonString.length];
         
         for(int i = 0; i < numberButtons.length; i++) {
 			numberButtons[i] = new JButton(buttonString[i]);
 			numberButtons[i].setFont(new Font("Tahoma", Font.BOLD, 16));		
 			numberButtons[i].setBackground(new Color(255,248,220));
-			teclasPanel.add(numberButtons[i]);
-        }
+			
+			numberButtons[i].addActionListener(new ActionListener() {
+				
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					// TODO Auto-generated method stub
+					uri.setText();
+				}
+			});
+		}*/
+        
+        btnNum1 = new JButton("1");
+        btnNum2 = new JButton("2");
+        btnNum3 = new JButton("3");
+        btnNum4 = new JButton("4");
+        btnNum5 = new JButton("5");
+        btnNum6 = new JButton("6");
+        btnNum7 = new JButton("7");
+        btnNum8 = new JButton("8");
+        btnNum9 = new JButton("9");
+        btnNum0 = new JButton("0");
+        btnNumE = new JButton("*");
+        btnNumT = new JButton("#");
+        
+        btnNum1.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum1.getText());
+				
+			}
+		});
+        
+        btnNum2.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum2.getText());
+				
+			}
+		});
+        
+        btnNum3.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum3.getText());
+				
+			}
+		});        
+           
+
+        btnNum4.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum4.getText());
+				
+			}
+		});        
+        
+        btnNum5.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum5.getText());
+				
+			}
+		});
+        
+        btnNum6.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum6.getText());
+				
+			}
+		});
+        
+        btnNum7.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum7.getText());
+				
+			}
+		});        
+           
+
+        btnNum8.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum8.getText());
+				
+			}
+		});
+
+        btnNum9.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum9.getText());
+				
+			}
+		});
+        
+        btnNum0.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNum0.getText());
+				
+			}
+		});        
+           
+
+        btnNumE.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNumE.getText());
+				
+			}
+		});
+        
+        
+        btnNumT.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				uri.setText(uri.getText()+btnNumT.getText());
+				
+			}
+		});
+        
+        
+        teclasPanel.add(btnNum1);
+        teclasPanel.add(btnNum2);
+        teclasPanel.add(btnNum3);
+        teclasPanel.add(btnNum4);
+        teclasPanel.add(btnNum5);
+        teclasPanel.add(btnNum6);
+        teclasPanel.add(btnNum7);
+        teclasPanel.add(btnNum8);
+        teclasPanel.add(btnNum9);
+        teclasPanel.add(btnNumE);
+        teclasPanel.add(btnNum0);
+        teclasPanel.add(btnNumT);
+        
+        teclasPanel.add(terminateButton);
         
         statusLabel = new JLabel(title);
         statusLabel.setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -211,9 +415,10 @@ public class MainFrame implements WindowListener, ActionListener {
 
         mainFrame.setJMenuBar(menuBar);
 
-        //mainFrame.pack();
+        mainFrame.pack();
         mainFrame.setSize(400, 600);
         mainFrame.setVisible(true);
+        
     }
 
     // window events

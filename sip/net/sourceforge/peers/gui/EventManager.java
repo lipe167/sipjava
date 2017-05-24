@@ -189,20 +189,36 @@ public class EventManager implements SipListener, MainFrameListener,
     public synchronized void callClicked(String uri) {
         String callId = Utils.generateCallID(
                 userAgent.getConfig().getLocalInetAddress());
-        CallFrame callFrame = new CallFrame(uri, callId, this, logger);
-        callFrames.put(callId, callFrame);
+        
+        //CallFrame callFrame = new CallFrame(uri, callId, this, logger);
+        uri = "sip:" + uri + "@" + userAgent.getDomain();
+        
+        //callFrames.put(callId, callFrame);
         SipRequest sipRequest;
         try {
-            sipRequest = userAgent.getUac().invite(uri, callId);
+            sipRequest = userAgent.getUac().invite(uri, callId);            
         } catch (SipUriSyntaxException e) {
             logger.error(e.getMessage(), e);
             mainFrame.setLabelText(e.getMessage());
             return;
         }
-        callFrame.setSipRequest(sipRequest);
-        callFrame.callClicked();
+        
+        //callFrame.setSipRequest(sipRequest);
+        //callFrame.callClicked();
     }
 
+    @Override
+    public synchronized void terminateButton(String terminate) {
+        try {
+            userAgent.getUac().terminate(null);
+        	userAgent.getUac().unregister();
+        } catch (Exception e) {
+            logger.error(e.getMessage(), e);
+            mainFrame.setLabelText(e.getMessage());
+            return;
+        }
+    }
+    
     @Override
     public synchronized void windowClosed() {
         try {
@@ -315,5 +331,4 @@ public class EventManager implements SipListener, MainFrameListener,
             SwingUtilities.invokeLater(runnable);
         }
     }
-
 }
